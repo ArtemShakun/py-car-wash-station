@@ -31,7 +31,7 @@ class CarWashStation:
         car.clean_mark = self.clean_power
         return income
 
-    def serve_cars(self, cars_list: list) -> float:
+    def serve_cars(self, cars_list: list[Car]) -> float:
         total_income = 0
         for car in cars_list:
             income_fo_car = self.wash_single_car(car)
